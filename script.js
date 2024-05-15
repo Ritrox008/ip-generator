@@ -21,7 +21,7 @@ for (let index = 0; index < listeInputRadio.length; index++) {
                 console.log("Bug class choice (line 11)")
             }
         }
-        //console.log(classe)
+        }
     })
 }
 
