@@ -59,6 +59,6 @@ genbouton.addEventListener("click", function () {
     console.log(reponse)
 
     let resultat = document.getElementById("result");
-    resultat.String(reponse)
+    resultat.setAttribute("string", reponse)
 });
 
