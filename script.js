@@ -22,12 +22,36 @@ for (let index = 0; index < listeInputRadio.length; index++) {
     })
 }
 
+let listeSelectRadio = document.querySelectorAll(".type select");
+for (let index = 0; index < listeSelectRadio.length; index++) {
+    listeSelectRadio[index].addEventListener("change", (event) => {
+        if (event.target.value === "1") {
+            console.log("private")
+        } else {
+            if (event.target.value === "2") {
+                console.log("public")
+            } else {
+                console.log("Bug class choice (line 11)")
+            }
+        }
+    })
+}
+
+
+
+
+
+
+
+
+
+
 let reponse
 let genbouton = document.getElementById("generer");
-//Définition variables min et max de génération//
-let max                                        //
-let min                                        //
-//Définition variables min et max de génération//
+//Définition variables min et max de génération
+let max
+let min
+//génération adresse IP aléatoire
 genbouton.addEventListener("click", function () {
     if (classe === 1) {
         min = 0
@@ -45,8 +69,7 @@ genbouton.addEventListener("click", function () {
             }
         }
     }
-
-
+    //génération adresse IP
     let nbr1 = Math.floor(Math.random() * (max-min+1)) + min;
     nbr1 = String(nbr1)
     let nbr2 = Math.floor(Math.random() * 255) + 0;
@@ -57,7 +80,7 @@ genbouton.addEventListener("click", function () {
     nbr4 = String(nbr4)
     reponse = nbr1 + "." + nbr2 + "." + nbr3 + "." + nbr4
     console.log(reponse)
-
+    //affichage adresse IP
     let resultat = document.getElementById("result")
     resultat.innerText = reponse
 });
