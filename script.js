@@ -23,12 +23,12 @@ for (let index = 0; index < listeInputRadio.length; index++) {
 }
 
 let reponse
-let monBouton = document.getElementById("generer");
+let genbouton = document.getElementById("generer");
 //Définition variables min et max de génération//
 let max                                        //
 let min                                        //
 //Définition variables min et max de génération//
-monBouton.addEventListener("click", function () {
+genbouton.addEventListener("click", function () {
     if (classe === 1) {
         min = 0
         max = 126
