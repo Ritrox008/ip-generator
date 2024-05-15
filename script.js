@@ -35,15 +35,21 @@ monBouton.addEventListener("click", function () {
     if (classe === 1) {
         min = 0
         max = 126
+    } else {
+        if (classe === 2) {
+            min = 128
+            max = 191
+        } else {
+            if (classe === 3) {
+                min = 192
+                max = 223
+            } else {
+                console.log("Bug max min (line 35)")
+            }
+        }
     }
-    if (classe === 2) {
-        min = 128
-        max = 191
-    }
-    if (classe === 3) {
-        min = 192
-        max = 223
-    }
+
+
     let nbr1 = Math.floor(Math.random() * (max-min+1)) + min;
     nbr1 = String(nbr1)
     let nbr2 = Math.floor(Math.random() * 255) + 0;
