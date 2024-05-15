@@ -1,7 +1,4 @@
 console.log("I love myself");
-//let motUtilisateur = prompt("Entrez un mot :")
-//console.log(motUtilisateur)
-
 
 let classe = 1
 
@@ -26,7 +23,7 @@ for (let index = 0; index < listeInputRadio.length; index++) {
 }
 
 let reponse
-let monBouton = document.getElementById("monBouton");
+let monBouton = document.getElementById("generer");
 //Définition variables min et max de génération//
 let max                                        //
 let min                                        //
@@ -60,9 +57,8 @@ monBouton.addEventListener("click", function () {
     nbr4 = String(nbr4)
     reponse = nbr1 + "." + nbr2 + "." + nbr3 + "." + nbr4
     console.log(reponse)
+
+    let resultat = document.getElementById("result");
+    resultat.String(reponse)
 });
 
-
-
-//let randomNumber = Math.floor(Math.random() * 10) + 1;
-//console.log(randomNumber);
