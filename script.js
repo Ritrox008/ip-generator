@@ -58,7 +58,7 @@ genbouton.addEventListener("click", function () {
     reponse = nbr1 + "." + nbr2 + "." + nbr3 + "." + nbr4
     console.log(reponse)
 
-    let resultat = document.getElementById("result");
-    resultat.setAttribute("string", reponse)
+    let resultat = document.getElementById("result")
+    resultat.innerText = reponse
 });
 
