@@ -34,6 +34,7 @@ listeSelectRadio.addEventListener("change", () => {
     }
 })
 
+let classresult = document.getElementById("resultat");
 let reponse
 let genbouton = document.getElementById("generer");
 //Définition variables min et max de génération
@@ -99,6 +100,21 @@ genbouton.addEventListener("click", function () {
     console.log("après génération",type)
     //affichage adresse IP
     let resultat = document.getElementById("result")
-    resultat.innerText = reponse
+    classresult.value = reponse
 });
 
+
+
+let copyButton = document.getElementById("copy");
+function copyresult() {
+    var copyText = document.getElementById("resultat");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);   //pour les téléphones
+    navigator.clipboard.writeText(copyText.value);
+    copyButton.value = "Copié!"
+    setTimeout(copieButton, 1000);
+}
+
+function copieButton() {
+    copyButton.value = "Copier"
+}
