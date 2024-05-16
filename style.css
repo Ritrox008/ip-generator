@@ -35,6 +35,13 @@ button {
     width: 250px;
     height: 50px;
     border-radius: 80px;
+    font-size: 30px;
+    border: 3px solid;
+}
+
+button:hover {
+   font-weight: bold;
+   border: 4px solid;
 }
 
 input {
@@ -42,6 +49,14 @@ input {
     height: 30px;
 }
 
-input:focus + .label-for-check {
+select {
+    width: 150px;
+    height: 50px;
+    border-radius: 80px;
+    font-size: 30px;
+    border: 3px solid;
+}
+
+input:checked + .label-for-check {
     font-weight: bold;
 }
