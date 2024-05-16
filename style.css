@@ -16,3 +16,22 @@ header {
     align-items: center;
     transition: 0.5s;
 }
+
+main {
+    font-size: 50px;
+    padding: 50px;
+    border: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 3px solid;
+    border-radius: 20px;
+    text-align: center;
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    border-radius: 80px;
+}
