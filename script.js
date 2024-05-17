@@ -106,15 +106,16 @@ genbouton.addEventListener("click", function () {
 
 
 let copyButton = document.getElementById("copy");
+let copyIcon = document.getElementById("iconcopy");
 function copyresult() {
     var copyText = document.getElementById("resultat");
     copyText.select();
     copyText.setSelectionRange(0, 99999);   //pour les téléphones
     navigator.clipboard.writeText(copyText.value);
-    copyButton.value = "Copié!"
+    copyIcon.src = "images/correct.png"
     setTimeout(copieButton, 1000);
 }
 
 function copieButton() {
-    copyButton.value = "Copier"
+    copyIcon.src = "images/copier-le-symbole-dinterface-de-deux-feuilles-de-papier.png"
 }

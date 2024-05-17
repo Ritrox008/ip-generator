@@ -18,6 +18,21 @@ header {
     transition: 0.5s;
 }
 
+.name-header {
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    padding: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
 main {
     font-size: 50px;
     padding: 50px;
@@ -95,7 +110,7 @@ input:checked + .label-for-check {
 #copy:hover  #iconcopy {
     width: 50px;
     height: 50px;
-    margin: -7px;
+    margin: -7.5px;
  }
 
 #select {
@@ -104,7 +119,21 @@ input:checked + .label-for-check {
 
  #iconcopy {
     padding: auto;
-    margin: -2px;
+    margin: -2.5px;
     width: 40px;
     height: 40px;
+ }
+
+ #credit {
+    color: white;
+    text-align: left;
+ }
+
+ #credit:visited {
+    color: white;
+ }
+
+ #license {
+    text-align: right;
+    margin-left: 50px;
  }
