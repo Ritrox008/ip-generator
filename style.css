@@ -19,9 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-}
-header .container {
-    text-align: center;
+    font-size: 14px;
 }
 
 .name-header {
