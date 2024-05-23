@@ -130,12 +130,12 @@ input:checked + .label-for-check {
     height: 40px;
  }
 
-#credit {
+#footer a {
     color: white;
     text-align: left;
  }
 
-#credit:visited {
+#footer a:visited {
     color: white;
  }
 
